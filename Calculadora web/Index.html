@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+	<div class="row">
+		<div class="column">
+			<section class="contenedor">
+				<H1 align="center">Calculadora web</H1>
+				</section>
+				
+				<section class="contenedor2">
+					
+				 <div class="principal">
+					  <div class="hijo">
+				
+						 <select name="calcular" id="operacion">
+				
+							 <option selected>Operacion</option>
+							 <option>Suma</option>
+							 <option>Resta</option>
+							 <option>Multiplicación</option>
+							 <option>División</option>
+				
+						 </select>
+						 
+				<input  class="campos" type="text" placeholder="Escribe el primer numero" id="n1">
+				<input  class="campos" type="text" placeholder="Escribe el segundo numero" id="n2">
+				<input type="text" class="noVisible" name="calcular" id="respuesta">
+				<input class="botones" type="button" onclick="calcular1()" value="Calcular">
+				<input class="botones"  type="button" onclick="confirTodo()" value="Eliminar Historial">
+					 </div>
+				
+				
+				</section>
+				
+		</div>
+		<div class="column">
+			<section class="contenedor2">
+				<h3 align="center">Historial</h3>
+				
+				</section>
+				
+				<section class="contenedor2">
+				<table class="table">
+					<thead>
+						<tr>
+							
+							<th scope="col">Operación</th>
+							
+							<th scope="col">Resultado</th>
+						</tr>
+					</thead>
+					<tbody id="calculo">
+						
+				
+					</tbody>
+				
+					<textarea name="" id="cal" class="noVisible" cols="30" rows="10">
+						<tr>
+				
+							<td class="text">{operacion} </td>
+							<td class="text">{resultado}</td>
+						</tr>
+					</textarea>
+				</table>
+				 </div>
+				</section>
+		</div>
+	
+	  </div>
+
+
+
+	<script src="./index.js"></script>
+</body>
+</html>
